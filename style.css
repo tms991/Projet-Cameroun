@@ -1,0 +1,59 @@
+/* Navigation */
+header nav ul {
+    display: flex;
+    align-items: flex-start; /* Garde les éléments alignés vers le haut */
+    padding: 0;
+    margin: 12;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px; /*Ajoute un espace de 20 pixels à gauche et à droite de chaque élément de la liste */
+    vertical-align: top;
+}
+
+header nav ul li a {
+    color: black; /*Définit la couleur du texte des rubriques en noir*/
+    text-decoration: none;
+    font-size: 1.2rem; /* taille rubrique */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /*Ajoute un soulignement aux rubriques lorsque la souris passe dessus */
+}
+
+/* Section avec image de fond et titre centré */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    text-align: center; /* Centre le texte dans la section */
+    
+    /* Image de fond */
+    background-image: url('https://labelleorange.fr/wp-content/uploads/la-belle-orange-site-web-fond.jpg');
+    background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* Centre l'image dans la section */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    color: black; /* Texte en blanc pour contraster avec l'image de fond */
+}
+
+/* Centrer uniquement le titre h1 */
+section h1 {
+    font-size: 3rem; /* Ajuste la taille du texte */
+    margin: 1;
+    z-index: 1; /* Assure que le texte s'affiche au-dessus de l'image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité du texte reflets */
+}
+
+/* Footer (reste inchangé) */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: black;
+    margin-top: 40px;
+}
+
+
