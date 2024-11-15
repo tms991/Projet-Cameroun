@@ -42,7 +42,7 @@ section {
 /* Centrer uniquement le titre h1 */
 section h1 {
     font-size: 3rem; /* Ajuste la taille du texte */
-    margin: 1;
+    margin: 0;
     z-index: 1; /* Assure que le texte s'affiche au-dessus de l'image */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité du texte reflets */
 }
