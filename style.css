@@ -46,6 +46,13 @@ section h1 {
     z-index: 1; /* Assure que le texte s'affiche au-dessus de l'image */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité du texte reflets */
 }
+.texte-gauche {
+    text-align: left; /* Aligne le texte à gauche */
+    margin-top: 10px; /* Espace entre le titre et le texte */
+    margin-left: 0; /* Assure que le texte commence à gauche */
+    font-size: 1.2rem; /* Ajuste la taille du texte */
+    line-height: 1.6; /* Améliore la lisibilité */
+}
 
 /* Footer (reste inchangé) */
 footer {
