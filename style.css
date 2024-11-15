@@ -55,7 +55,7 @@ section h1 {
     line-height: 1.6; /* Améliore la lisibilité */
 }
 /* texte de contact.html */
-.texte-demande {
+.demande {
     text-align: left; /* Aligne le texte à gauche */
     margin-top: 5px; /* Espace entre le titre et le texte */
     margin-left: 0; /* Assure que le texte commence à gauche */
