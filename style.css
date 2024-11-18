@@ -32,7 +32,7 @@ section {
     text-align: center; /* Centre le texte dans la section */
     
     /* Image de fond */
-    background-image: url('https://img.freepik.com/photos-gratuite/abstrait-bleu-elegant-espace-texte_1017-46767.jpg');
+    background-image: <img src="https://www.globe-reporters.org/IMG/jpg/07_clement.jpg"/>
     background-size: cover; /* L'image couvre toute la section */
     background-position: center; /* Centre l'image dans la section */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
