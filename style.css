@@ -32,7 +32,7 @@ section {
     text-align: center; /* Centre le texte dans la section */
     
     /* Image de fond */
-    background-image: url('https://img.freepik.com/photos-gratuite/fond-bleu-blanc-simple-espace-texte_1017-46764.jpg?semt=ais_hybrid');
+    background-image: url('file:///C:/Users/pgaud/Downloads/abstract-elegant-blue-background-with-text-space.jpg');
     background-size: cover; /* L'image couvre toute la section */
     background-position: center; /* Centre l'image dans la section */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
@@ -49,7 +49,7 @@ section h1 {
 /* texte de acceuil.html */
 .texte-gauche {
     text-align: left; /* Aligne le texte à gauche */
-    margin-top: 5px; /* Espace entre le titre et le texte */
+    margin-top: 45px; /* Espace entre le titre et le texte */
     margin-left: 0; /* Assure que le texte commence à gauche */
     font-size: 1.9rem; /* Ajuste la taille du texte */
     line-height: 1.6; /* Améliore la lisibilité */
@@ -57,10 +57,20 @@ section h1 {
 /* texte de contact.html */
 .demande {
     text-align: left; /* Aligne le texte à gauche */
-    margin-top: 5px; /* Espace entre le titre et le texte */
+    margin-top: 45px; /* Espace entre le titre et le texte */
     margin-left: 0; /* Assure que le texte commence à gauche */
-    font-size: 1.9rem; /* Ajuste la taille du texte */
+    font-size: 1.6rem; /* Ajuste la taille du texte */
     line-height: 1.6; /* Améliore la lisibilité */
+}
+#accueil h1 {
+    margin-bottom: 20px; /* Ajustez cet espace entre le titre et l'image */
+    text-align: center; /* Optionnel, pour centrer le titre */
+}
+
+#accueil img {
+    display: block; /* Centrer l'image horizontalement */
+    margin: 0 auto; /* Centrer l'image */
+    margin-top: 20px; /* Espace au-dessus de l'image, si nécessaire */
 }
 /* Footer (reste inchangé) */
 footer {
