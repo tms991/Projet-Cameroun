@@ -51,7 +51,7 @@ section h1 {
     text-align: left; /* Aligne le texte à gauche */
     margin-top: 45px; /* Espace entre le titre et le texte */
     margin-left: 0; /* Assure que le texte commence à gauche */
-    font-size: 1.9rem; /* Ajuste la taille du texte */
+    font-size: 1.6rem; /* Ajuste la taille du texte */
     line-height: 1.6; /* Améliore la lisibilité */
 }
 /* texte de contact.html */
@@ -62,23 +62,74 @@ section h1 {
     font-size: 1.6rem; /* Ajuste la taille du texte */
     line-height: 1.6; /* Améliore la lisibilité */
 }
+
 #accueil h1 {
     margin-bottom: 20px; /* Ajustez cet espace entre le titre et l'image */
     text-align: center; /* Optionnel, pour centrer le titre */
 }
-
 #accueil img {
     display: block; /* Centrer l'image horizontalement */
     margin: 0 auto; /* Centrer l'image */
     margin-top: 20px; /* Espace au-dessus de l'image, si nécessaire */
 }
+
+/* Styles spécifiques à la page partenaires */
+body.page-partenaires section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-image: url('https://img.freepik.com/photos-gratuite/abstrait-bleu-elegant-espace-texte_1017-46767.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+body.page-partenaires section h1 {
+    font-size: 3rem;
+    margin: 0;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur pour les partenaires */
+body.page-partenaires .partenaires-container {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    gap: 45px; /* Espacement entre chaque partenaire */
+    align-items: flex-start; /* Aligne les éléments à gauche du conteneur */
+    margin-top: 20px; /* Ajoute un espacement au-dessus */
+}
+
+/* Chaque partenaire (image + texte) */
+body.page-partenaires .partenaire {
+    display: flex;
+    align-items: center; /* Aligne les images et le texte verticalement */
+}
+
+/* Style des images */
+body.page-partenaires .partenaire img {
+    width: 160px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Conserve les proportions de l'image */
+    margin-right: 30px; /* Espace entre l'image et le texte */
+}
+
+/* Texte à droite de chaque image */
+body.page-partenaires .partenaire p {
+    margin: 0; /* Supprime les marges par défaut */
+    font-size: 1.4rem; /* Ajustez la taille du texte selon vos préférences */
+    line-height: 1.5; /* Améliore la lisibilité */
+}
+
 /* Footer (reste inchangé) */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #333;
-    color: black;
+    color: white;
     margin-top: 40px;
 }
-
 
