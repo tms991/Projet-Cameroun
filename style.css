@@ -49,9 +49,9 @@ section h1 {
 
 /* texte de acceuil.html */
 .texte-gauche {
-    text-align: left; /* Aligne le texte à gauche */
+    text-align: center; /* Aligne le texte au centre */
     margin-top: 45px; /* Espace entre le titre et le texte */
-    margin-left: 0; /* Assure que le texte commence à gauche */
+   
     font-size: 1.6rem; /* Ajuste la taille du texte */
     line-height: 1.6; /* Améliore la lisibilité */
 }
@@ -79,10 +79,10 @@ section h1 {
 /* Styles spécifiques à la page partenaires */
 body.page-partenaires section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    text-align: center; /* Aligne le texte au centre */
     padding: 40px;
     background-image: url('https://img.freepik.com/photos-gratuite/abstrait-bleu-elegant-espace-texte_1017-46767.jpg');
     background-size: cover;
@@ -169,7 +169,7 @@ body.page-partenaires .partenaire p {
 /* Image dans chaque bloc */
 .bloc-repe img {
     width: 80%; /* Ajuste la taille de l'image selon la taille du parent */
-    max-width: 800px; /* Limite la largeur à 300px */
+    max-width: 800px; /* Limite la largeur à 800px */
     height: auto; /* Garde les proportions */
     margin-bottom: 15px; /* Espace sous l'image */
 }
