@@ -127,18 +127,27 @@ body.page-partenaires .partenaire p {
     line-height: 1.5; /* Améliore la lisibilité */
 }
 
-/* Footer (reste inchangé) */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    margin-top: 40px;
+/* Flèche pointant vers le bas */
+.arrow-down {
+    font-size: 3rem; /* Taille de la flèche */
+    text-align: center; /* Centrer horizontalement */
+    margin-top: 20px; /* Espace entre l'image et la flèche */
+    color: black; /* Couleur de la flèche */
+    cursor: pointer; /* Curseur en forme de main pour indiquer que c'est cliquable */
+    animation: bounce 1s infinite; /* Animation de rebond */
 }
 
-/* --------------------------- */
-/* Styles pour les blocs répétés (Titre, Image, Texte) */
-/* --------------------------- */
+/* Animation de rebond de la flèche */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Fait "rebondir" la flèche */
+    }
+}
+
+
 
 /* Conteneur des blocs (pour bien séparer chaque groupe de titre, image et texte) */
 .bloc-repe {
@@ -153,24 +162,33 @@ footer {
 /* Titre du bloc */
 .bloc-repe h2 {
     font-size: 2rem; /* Taille du titre */
-    color: #333; /* Couleur du texte */
+    color: #2DE308; /* Couleur du texte */
     margin-bottom: 15px; /* Espace sous le titre */
 }
 
 /* Image dans chaque bloc */
 .bloc-repe img {
     width: 80%; /* Ajuste la taille de l'image selon la taille du parent */
-    max-width: 300px; /* Limite la largeur à 300px */
+    max-width: 800px; /* Limite la largeur à 300px */
     height: auto; /* Garde les proportions */
     margin-bottom: 15px; /* Espace sous l'image */
 }
 
 /* Texte de chaque bloc */
 .bloc-repe p {
-    font-size: 1.4rem; /* Taille du texte */
+    font-size: 1.6rem; /* Taille du texte */
     line-height: 1.6; /* Espacement entre les lignes */
-    color: #555; /* Couleur du texte */
+    color: black; /* Couleur du texte */
     max-width: 800px; /* Limite la largeur du texte */
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Footer (reste inchangé) */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
 }
