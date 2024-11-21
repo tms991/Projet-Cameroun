@@ -46,6 +46,7 @@ section h1 {
     z-index: 1; /* Assure que le texte s'affiche au-dessus de l'image */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité du texte reflets */
 }
+
 /* texte de acceuil.html */
 .texte-gauche {
     text-align: left; /* Aligne le texte à gauche */
@@ -54,6 +55,7 @@ section h1 {
     font-size: 1.6rem; /* Ajuste la taille du texte */
     line-height: 1.6; /* Améliore la lisibilité */
 }
+
 /* texte de contact.html */
 .demande {
     text-align: left; /* Aligne le texte à gauche */
@@ -67,6 +69,7 @@ section h1 {
     margin-bottom: 20px; /* Ajustez cet espace entre le titre et l'image */
     text-align: center; /* Optionnel, pour centrer le titre */
 }
+
 #accueil img {
     display: block; /* Centrer l'image horizontalement */
     margin: 0 auto; /* Centrer l'image */
@@ -133,3 +136,41 @@ footer {
     margin-top: 40px;
 }
 
+/* --------------------------- */
+/* Styles pour les blocs répétés (Titre, Image, Texte) */
+/* --------------------------- */
+
+/* Conteneur des blocs (pour bien séparer chaque groupe de titre, image et texte) */
+.bloc-repe {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    margin-top: 30px; /* Espace entre chaque bloc */
+    padding: 20px;
+    text-align: center; /* Centre le texte dans chaque bloc */
+}
+
+/* Titre du bloc */
+.bloc-repe h2 {
+    font-size: 2rem; /* Taille du titre */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 15px; /* Espace sous le titre */
+}
+
+/* Image dans chaque bloc */
+.bloc-repe img {
+    width: 80%; /* Ajuste la taille de l'image selon la taille du parent */
+    max-width: 300px; /* Limite la largeur à 300px */
+    height: auto; /* Garde les proportions */
+    margin-bottom: 15px; /* Espace sous l'image */
+}
+
+/* Texte de chaque bloc */
+.bloc-repe p {
+    font-size: 1.4rem; /* Taille du texte */
+    line-height: 1.6; /* Espacement entre les lignes */
+    color: #555; /* Couleur du texte */
+    max-width: 800px; /* Limite la largeur du texte */
+    margin-left: auto;
+    margin-right: auto;
+}
