@@ -51,7 +51,6 @@ section h1 {
 .texte-gauche {
     text-align: center; /* Aligne le texte au centre */
     margin-top: 45px; /* Espace entre le titre et le texte */
-   
     font-size: 1.6rem; /* Ajuste la taille du texte */
     line-height: 1.6; /* Améliore la lisibilité */
 }
