@@ -75,6 +75,40 @@ section h1 {
     margin-top: 20px; /* Espace au-dessus de l'image, si nécessaire */
 }
 
+/* Conteneur pour le titre avec images de chaque côté */
+#accueil {
+    position: relative; /* Permet de positionner les images relatives au conteneur */
+    text-align: center; /* Centre le titre */
+    margin: 20px 0;
+}
+
+/* Images à gauche et à droite du titre */
+#accueil .image-left,
+#accueil .image-right {
+    position: absolute;
+    top: 50%; /* Aligne verticalement au centre du titre */
+    transform: translateY(-50%); /* Compense le décalage */
+    width: 250px; /* Largeur des images */
+    height: auto; /* Conserve les proportions */
+}
+
+#accueil .image-left {
+    left: 10px; /* Place l'image à gauche */
+}
+
+#accueil .image-right {
+    right: 10px; /* Place l'image à droite */
+}
+
+/* Texte sous le titre */
+#accueil .texte-sous-titre {
+    margin: 20px auto; /* Ajoute de l'espace autour du texte */
+    font-size: 1.3rem; /* Taille du texte */
+    line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
+    max-width: 1200px; /* Limite la largeur du texte */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
 /* Styles spécifiques à la page partenaires */
 body.page-partenaires section {
     display: flex;
@@ -157,7 +191,7 @@ body.page-partenaires .partenaire p {
 
 .page-accueil .accueil-image-container img {
     width: 30%; /* Les images occupent 30% de la largeur du conteneur parent */
-    max-width: 300px; /* Largeur maximale */
+    max-width: 400px; /* Largeur maximale */
     height: auto; /* Conserve les proportions des images */
     border-radius: 5px; /* Ajoute un léger arrondi aux coins */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
