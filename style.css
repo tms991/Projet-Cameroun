@@ -147,41 +147,41 @@ body.page-partenaires .partenaire p {
 }
 
 
-
-/* Conteneur des blocs (pour bien séparer chaque groupe de titre, image et texte) */
-.bloc-repe {
+/* Images alignées horizontalement pour la page d'accueil */
+.page-accueil .accueil-image-container {
     display: flex;
-    flex-direction: column; /* Aligne les éléments verticalement */
-    align-items: center; /* Centre le contenu horizontalement */
-    margin-top: 30px; /* Espace entre chaque bloc */
-    padding: 20px;
-    text-align: center; /* Centre le texte dans chaque bloc */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 20px; /* Espace entre les images */
+    margin-bottom: 20px; /* Espace sous le groupe d'images */
 }
 
-/* Titre du bloc */
-.bloc-repe h2 {
-    font-size: 2rem; /* Taille du titre */
-    color: #2DE308; /* Couleur du texte */
-    margin-bottom: 15px; /* Espace sous le titre */
+.page-accueil .accueil-image-container img {
+    width: 30%; /* Les images occupent 30% de la largeur du conteneur parent */
+    max-width: 300px; /* Largeur maximale */
+    height: auto; /* Conserve les proportions des images */
+    border-radius: 5px; /* Ajoute un léger arrondi aux coins */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
 }
 
-/* Image dans chaque bloc */
-.bloc-repe img {
-    width: 80%; /* Ajuste la taille de l'image selon la taille du parent */
-    max-width: 800px; /* Limite la largeur à 800px */
-    height: auto; /* Garde les proportions */
-    margin-bottom: 15px; /* Espace sous l'image */
+/* Blocs répétitifs */
+.page-accueil .bloc-repe {
+    margin-top: 30px; /* Espace entre les blocs */
+    text-align: center;
 }
 
-/* Texte de chaque bloc */
-.bloc-repe p {
-    font-size: 1.6rem; /* Taille du texte */
-    line-height: 1.6; /* Espacement entre les lignes */
-    color: black; /* Couleur du texte */
-    max-width: 800px; /* Limite la largeur du texte */
-    margin-left: auto;
-    margin-right: auto;
+.page-accueil .bloc-repe h2 {
+    font-size: 2rem;
+    color: #2DE308;
+    margin-bottom: 15px;
 }
+
+.page-accueil .bloc-repe p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto; /* Centrer le paragraphe */
+}
+
 
 /* Footer (reste inchangé) */
 footer {
