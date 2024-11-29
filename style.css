@@ -1,26 +1,46 @@
 /* Navigation */
+header nav {
+    position: fixed;  /* Fixe la navigation en haut */
+    top: 0;  /* Positionne la navigation en haut de la fenêtre */
+    left: 0;  /* Positionne la navigation à droite de la page */
+    width: auto;  /* Laisse la largeur s'ajuster automatiquement */
+    z-index: 1000;  /* Met la navigation au-dessus des autres éléments */
+    background-color: white;  /* Fond de la navigation pour qu'elle soit visible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Ombre sous la barre de navigation */
+    padding: 10px 20px;  /* Espacement autour des éléments de la navigation */
+}
+
+/* Styles pour les éléments de la navigation */
 header nav ul {
     display: flex;
-    align-items: flex-start; /* Garde les éléments alignés vers le haut */
+    align-items: center;
     padding: 0;
-    margin: 12;
+    margin: 0;
     list-style: none;
+    justify-content: flex-end;  /* Aligne les éléments de la navigation à droite */
 }
 
 header nav ul li {
-    margin: 0 20px; /*Ajoute un espace de 20 pixels à gauche et à droite de chaque élément de la liste */
-    vertical-align: top;
+    margin: 0 20px;  /* Espacement entre les éléments de la navigation */
 }
 
 header nav ul li a {
-    color: black; /*Définit la couleur du texte des rubriques en noir*/
-    text-decoration: none;
-    font-size: 1.2rem; /* taille rubrique */
+    color: black;  /* Couleur des liens */
+    text-decoration: none;  /* Pas de soulignement par défaut */
+    font-size: 1.2rem;  /* Taille du texte */
 }
 
 header nav ul li a:hover {
-    text-decoration: underline; /*Ajoute un soulignement aux rubriques lorsque la souris passe dessus */
+    text-decoration: underline;  /* Sous-ligne le lien au survol */
 }
+
+/* Pour ajouter un espacement au contenu sous la barre de navigation */
+body {
+    padding-top: 60px; /* Espace pour que le contenu ne soit pas caché sous la navigation */
+}
+
+
+
 
 /* Section avec image de fond et titre centré */
 section {
@@ -191,8 +211,8 @@ body.page-partenaires .partenaire p {
 
 .page-accueil .accueil-image-container img {
     width: 30%; /* Les images occupent 30% de la largeur du conteneur parent */
-    max-width: 400px; /* Largeur maximale */
-    height: auto; /* Conserve les proportions des images */
+    max-width: 500px; /* Largeur maximale */
+    height: 250px; /* Conserve les proportions des images */
     border-radius: 5px; /* Ajoute un léger arrondi aux coins */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
 }
@@ -225,3 +245,4 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
