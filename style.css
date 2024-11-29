@@ -232,7 +232,7 @@ body.page-partenaires .partenaire p {
 .page-accueil .bloc-repe p {
     font-size: 1.6rem;
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto; /* Centrer le paragraphe */
 }
 
@@ -245,4 +245,3 @@ footer {
     color: white;
     margin-top: 40px;
 }
-
