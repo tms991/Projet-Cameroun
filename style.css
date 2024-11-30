@@ -182,7 +182,7 @@ body.page-partenaires .partenaire p {
 
 /* Flèche pointant vers le bas */
 .arrow-down {
-    font-size: 3rem; /* Taille de la flèche */
+    font-size: 5rem; /* Taille de la flèche */
     text-align: center; /* Centrer horizontalement */
     margin-top: 20px; /* Espace entre l'image et la flèche */
     color: black; /* Couleur de la flèche */
@@ -232,7 +232,7 @@ body.page-partenaires .partenaire p {
 .page-accueil .bloc-repe p {
     font-size: 1.6rem;
     line-height: 1.6;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto; /* Centrer le paragraphe */
 }
 
