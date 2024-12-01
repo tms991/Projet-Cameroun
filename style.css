@@ -121,7 +121,7 @@ section h1 {
 }
 
 #accueil .image-left {
-    right: 0px; /* Place l'image à gauche de l'autre image, tout en haut */
+    right: 10px; /* Place l'image à gauche de l'autre image, tout en haut */
 }
 
 #accueil .image-right {
