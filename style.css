@@ -70,7 +70,7 @@ section h1 {
     font-size: 3rem; /* Ajuste la taille du texte */
     margin: 0;
     z-index: 1; /* Assure que le texte s'affiche au-dessus de l'image */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité du texte reflets */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité du texte */
 }
 
 /* texte de acceuil.html */
@@ -90,17 +90,20 @@ section h1 {
     line-height: 1.6; /* Améliore la lisibilité */
 }
 
+/* Titre de la page accueil */
 #accueil h1 {
-    margin-bottom: 20px; /* Ajustez cet espace entre le titre et l'image */
+    margin-bottom: 20px; /* Ajuste l'espace entre le titre et l'image */
     text-align: center; /* Optionnel, pour centrer le titre */
 }
 
+/* Image principale */
 #accueil img {
     display: block; /* Centrer l'image horizontalement */
     margin: 0 auto; /* Centrer l'image */
-    margin-top: 20px; /* Espace au-dessus de l'image, si nécessaire */
+    margin-top: 20px; /* Espace au-dessus de l'image */
 }
 
+/* Conteneur pour le titre avec images de chaque côté */
 /* Conteneur pour le titre avec images de chaque côté */
 #accueil {
     position: relative; /* Permet de positionner les images relatives au conteneur */
@@ -108,28 +111,28 @@ section h1 {
     margin: 20px 0;
 }
 
-/* Images à gauche et à droite du titre */
+/* Images à gauche et à droite du titre (positionnées en haut à droite de la page) */
 #accueil .image-left,
 #accueil .image-right {
     position: absolute;
-    top: 50%; /* Aligne verticalement au centre du titre */
-    transform: translateY(-50%); /* Compense le décalage */
+    top: 0; /* Aligne les images tout en haut de la page */
     width: 250px; /* Largeur des images */
     height: auto; /* Conserve les proportions */
 }
 
 #accueil .image-left {
-    left: 10px; /* Place l'image à gauche */
+    right: 0px; /* Place l'image à gauche de l'autre image, tout en haut */
 }
 
 #accueil .image-right {
-    right: 10px; /* Place l'image à droite */
+    right: 0; /* Place l'image à droite */
 }
+
 
 /* Texte sous le titre */
 #accueil .texte-sous-titre {
-    margin: 20px auto; /* Ajoute de l'espace autour du texte */
-    font-size: 1.3rem; /* Taille du texte */
+    margin-top: 20px; /* Espace entre l'image principale et le texte */
+    font-size: 1.6rem; /* Taille du texte */
     line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
     max-width: 1100px; /* Limite la largeur du texte */
     text-align: center; /* Centre le texte horizontalement */
@@ -238,8 +241,7 @@ body.page-partenaires .partenaire p {
     margin: 0 auto; /* Centrer le paragraphe */
 }
 
-
-/* Footer (reste inchangé) */
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
