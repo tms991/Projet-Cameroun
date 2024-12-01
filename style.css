@@ -116,7 +116,7 @@ section h1 {
 #accueil .image-right {
     position: absolute;
     top: 0; /* Aligne les images tout en haut de la page */
-    width: 250px; /* Largeur des images */
+    width: 150px; /* Largeur des images */
     height: auto; /* Conserve les proportions */
 }
 
@@ -125,7 +125,7 @@ section h1 {
 }
 
 #accueil .image-right {
-    right: 0; /* Place l'image à droite */
+    right: 550px; /* Place l'image à droite */
 }
 
 
