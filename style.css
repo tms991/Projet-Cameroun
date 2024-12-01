@@ -1,244 +1,143 @@
 /* Fond du site */
 html {
-    height: 100%; /* Assure que le conteneur principal couvre toute la hauteur */
+    height: 100%;
 }
 
 body {
-    min-height: 100%; /* Permet de s'étendre si le contenu dépasse la hauteur */
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les espacements par défaut */
-    background-color: #e5fbfd; /* Couleur de fond pour tout le site */
-    padding-top: 60px; /* Espace pour que le contenu ne soit pas caché sous la navigation */
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e5fbfd;
+    padding-top: 60px;
+    box-sizing: border-box;  /* Permet de mieux gérer les marges et le padding */
 }
 
 /* Navigation */
 header nav {
-    position: fixed;  /* Fixe la navigation en haut */
-    top: 0;  /* Positionne la navigation en haut de la fenêtre */
-    left: 0;  /* Positionne la navigation à droite de la page */
-    width: auto;  /* Laisse la largeur s'ajuster automatiquement */
-    z-index: 1000;  /* Met la navigation au-dessus des autres éléments */
-    background-color: #e5fbfd;  /* Fond de la navigation pour qu'elle soit visible */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Ombre sous la barre de navigation */
-    padding: 10px 20px;  /* Espacement autour des éléments de la navigation */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 1000;
+    background-color: #e5fbfd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
 }
 
-/* Styles pour les éléments de la navigation */
 header nav ul {
     display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
-    justify-content: flex-end;  /* Aligne les éléments de la navigation à droite */
+    justify-content: flex-end;
 }
 
 header nav ul li {
-    margin: 0 20px;  /* Espacement entre les éléments de la navigation */
+    margin: 0 20px;
 }
 
 header nav ul li a {
-    color: black;  /* Couleur des liens */
-    text-decoration: none;  /* Pas de soulignement par défaut */
-    font-size: 1.2rem;  /* Taille du texte */
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;  /* Sous-ligne le lien au survol */
-}
-
-/* Pour ajouter un espacement au contenu sous la barre de navigation */
-body {
-    padding-top: 60px; /* Espace pour que le contenu ne soit pas caché sous la navigation */
+    text-decoration: underline;
 }
 
 /* Section avec image de fond et titre centré */
 section {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centre le contenu verticalement */
-    align-items: center; /* Centre le contenu horizontalement */
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
-    text-align: center; /* Centre le texte dans la section */
-    
-    background-color: #e5fbfd; /* Couleur de fond uniforme */
-    color: black; /* Texte en noir */
-}
-
-/* Centrer uniquement le titre h1 */
-section h1 {
-    font-size: 3rem; /* Ajuste la taille du texte */
-    margin: 0;
-    z-index: 1; /* Assure que le texte s'affiche au-dessus de l'image */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité du texte */
-}
-
-/* texte de acceuil.html */
-.texte-gauche {
-    text-align: center; /* Aligne le texte au centre */
-    margin-top: 45px; /* Espace entre le titre et le texte */
-    font-size: 1.6rem; /* Ajuste la taille du texte */
-    line-height: 1.6; /* Améliore la lisibilité */
-}
-
-/* texte de contact.html */
-.demande {
-    text-align: left; /* Aligne le texte à gauche */
-    margin-top: 45px; /* Espace entre le titre et le texte */
-    margin-left: 0; /* Assure que le texte commence à gauche */
-    font-size: 1.6rem; /* Ajuste la taille du texte */
-    line-height: 1.6; /* Améliore la lisibilité */
-}
-
-/* Titre de la page accueil */
-#accueil h1 {
-    margin-bottom: 20px; /* Ajuste l'espace entre le titre et l'image */
-    text-align: center; /* Optionnel, pour centrer le titre */
-}
-
-/* Image principale */
-#accueil img {
-    display: block; /* Centrer l'image horizontalement */
-    margin: 0 auto; /* Centrer l'image */
-    margin-top: 20px; /* Espace au-dessus de l'image */
-}
-
-/* Conteneur pour le titre avec images de chaque côté */
-/* Conteneur pour le titre avec images de chaque côté */
-#accueil {
-    position: relative; /* Permet de positionner les images relatives au conteneur */
-    text-align: center; /* Centre le titre */
-    margin: 20px 0;
-}
-
-/* Images à gauche et à droite du titre (positionnées en haut à droite de la page) */
-#accueil .image-left,
-#accueil .image-right {
-    position: absolute;
-    top: 0; /* Aligne les images tout en haut de la page */
-    width: 150px; /* Largeur des images */
-    height: auto; /* Conserve les proportions */
-}
-
-#accueil .image-left {
-    right: 10px; /* Place l'image à gauche de l'autre image, tout en haut */
-}
-
-#accueil .image-right {
-    right: 550px; /* Place l'image à droite */
-}
-
-
-/* Texte sous le titre */
-#accueil .texte-sous-titre {
-    margin-top: 20px; /* Espace entre l'image principale et le texte */
-    font-size: 1.6rem; /* Taille du texte */
-    line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
-    max-width: 1100px; /* Limite la largeur du texte */
-    text-align: center; /* Centre le texte horizontalement */
-}
-
-/* Styles spécifiques à la page partenaires */
-body.page-partenaires section {
-    display: flex;
-    flex-direction: column; /* Aligne les éléments verticalement */
-    justify-content: center; /* Centre le contenu verticalement */
-    align-items: center; /* Centre le contenu horizontalement */
-    text-align: center; /* Aligne le texte au centre */
-    padding: 40px;
-    background-color: #e5fbfd; /* Uniformise la couleur de fond */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #e5fbfd;
     color: black;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-body.page-partenaires section h1 {
-    font-size: 3rem;
+section h1 {
+    font-size: 2rem;
     margin: 0;
     z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Conteneur pour les partenaires */
+/* Texte */
+.texte-gauche, .demande {
+    text-align: center;
+    font-size: 1.4rem;  /* Taille du texte réduite pour mobile */
+    line-height: 1.6;
+    margin-top: 20px;
+    padding: 0 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Conteneur pour le titre avec images de chaque côté */
+#accueil {
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+#accueil .image-left,
+#accueil .image-right {
+    position: absolute;
+    top: 0;
+    width: 100px; /* Réduire la taille des images */
+    height: auto;
+}
+
+#accueil .image-left {
+    left: 10px;
+}
+
+#accueil .image-right {
+    right: 10px;
+}
+
+#accueil img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: auto; /* Assure que l'image conserve ses proportions */
+}
+
+/* Partenaires */
+body.page-partenaires section {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 body.page-partenaires .partenaires-container {
     display: flex;
-    flex-direction: column; /* Aligne les éléments verticalement */
-    gap: 45px; /* Espacement entre chaque partenaire */
-    align-items: flex-start; /* Aligne les éléments à gauche du conteneur */
-    margin-top: 20px; /* Ajoute un espacement au-dessus */
+    flex-direction: column;
+    align-items: center;  /* Centrer les éléments */
+    gap: 30px;
+    margin-top: 20px;
+    padding: 0 10px;
 }
 
-/* Chaque partenaire (image + texte) */
 body.page-partenaires .partenaire {
     display: flex;
-    align-items: center; /* Aligne les images et le texte verticalement */
+    flex-direction: column; /* Aligne les images et le texte verticalement */
+    align-items: center; /* Centre le texte et l'image */
 }
 
-/* Style des images */
 body.page-partenaires .partenaire img {
-    width: 160px; /* Ajustez la largeur selon vos besoins */
-    height: auto; /* Conserve les proportions de l'image */
-    margin-right: 30px; /* Espace entre l'image et le texte */
-}
-
-/* Texte à droite de chaque image */
-body.page-partenaires .partenaire p {
-    margin: 0; /* Supprime les marges par défaut */
-    font-size: 1.6rem; /* Ajustez la taille du texte selon vos préférences */
-    line-height: 1.5; /* Améliore la lisibilité */
-}
-
-/* Flèche pointant vers le bas */
-.arrow-down {
-    font-size: 5rem; /* Taille de la flèche */
-    text-align: center; /* Centrer horizontalement */
-    margin-top: 20px; /* Espace entre l'image et la flèche */
-    color: black; /* Couleur de la flèche */
-    cursor: pointer; /* Curseur en forme de main pour indiquer que c'est cliquable */
-    animation: bounce 1s infinite; /* Animation de rebond */
-}
-
-/* Animation de rebond de la flèche */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(10px); /* Fait "rebondir" la flèche */
-    }
-}
-
-/* Images alignées horizontalement pour la page d'accueil */
-.page-accueil .accueil-image-container {
-    display: flex;
-    justify-content: center; /* Centre les images horizontalement */
-    gap: 20px; /* Espace entre les images */
-    margin-bottom: 20px; /* Espace sous le groupe d'images */
-}
-
-.page-accueil .accueil-image-container img {
-    width: 30%; /* Les images occupent 30% de la largeur du conteneur parent */
-    max-width: 500px; /* Largeur maximale */
-    height: 250px; /* Conserve les proportions des images */
-    border-radius: 5px; /* Ajoute un léger arrondi aux coins */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
-}
-
-/* Blocs répétitifs */
-.page-accueil .bloc-repe {
-    margin-top: 80px; /* Espace entre les blocs */
-    text-align: center;
-}
-
-.page-accueil .bloc-repe h2 {
-    font-size: 2rem;
-    color: #2DE308;
+    width: 100px;  /* Ajuste la largeur de l'image des partenaires */
     margin-bottom: 15px;
 }
 
-.page-accueil .bloc-repe p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-    max-width: 1100px;
-    margin: 0 auto; /* Centrer le paragraphe */
+body.page-partenaires .partenaire p {
+    font-size: 1.4rem;  /* Réduit la taille du texte */
+    text-align: center;
 }
 
 /* Footer */
@@ -252,71 +151,94 @@ footer {
 
 /* Responsive: Téléphone (max-width: 768px) */
 @media (max-width: 768px) {
+
     /* Navigation */
     header nav ul {
-        flex-direction: column;  /* Stack les éléments de la navigation */
-        align-items: center;  /* Centre les éléments */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
     }
-    
+
     header nav ul li {
-        margin: 10px 0;  /* Ajuste l'espacement entre les éléments */
+        margin: 10px 0;
     }
 
     header nav ul li a {
-        font-size: 1rem;  /* Réduit la taille des liens pour les petits écrans */
+        font-size: 1.2rem;
     }
 
-    /* Section avec image de fond et titre centré */
+    /* Section avec image et texte centré */
     section {
-        height: auto; /* Adapte la section à la taille du contenu */
-        padding: 20px; /* Ajoute un padding pour aérer le contenu */
-    }
-
-    section h1 {
-        font-size: 2rem; /* Ajuste la taille du titre */
-    }
-
-    /* Texte */
-    .texte-gauche,
-    .demande {
-        font-size: 1.4rem; /* Réduit la taille du texte pour les petits écrans */
-        margin-top: 20px;
-        line-height: 1.4;  /* Ajuste l'espacement des lignes */
-    }
-
-    /* Accueil */
-    #accueil img {
-        width: 100%; /* L'image prend toute la largeur */
-        height: auto; /* Conserve les proportions de l'image */
-    }
-
-    /* Partenaires */
-    .partenaires-container {
+        height: auto;
         padding: 20px;
     }
 
-    .partenaire {
-        flex-direction: column; /* Aligne l'image et le texte verticalement */
-        text-align: center; /* Centre le texte */
+    section h1 {
+        font-size: 2rem;
+        margin: 0;
     }
 
-    .partenaire img {
-        width: 100px; /* Réduit la taille des images des partenaires */
-        margin-right: 0;  /* Enlève l'espacement entre l'image et le texte */
-        margin-bottom: 15px; /* Ajoute un espace sous les images */
+    .texte-gauche, .demande {
+        font-size: 1.4rem;
+        margin-top: 20px;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0 20px;
     }
 
-    .partenaire p {
-        font-size: 1.4rem; /* Réduit la taille du texte */
+    /* Texte des pages */
+    #accueil h1, .texte-gauche, .demande {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    /* Images dans .page-accueil */
+    /* Images */
+    #accueil img {
+        width: 100%;
+        max-width: 100%;  /* L'image ne dépasse pas la largeur de l'écran */
+    }
+
+    /* Images des partenaires */
+    body.page-partenaires .partenaire img {
+        width: 80%;  /* Réduit la taille des images des partenaires */
+        max-width: 150px;
+    }
+
+    /* Conteneur des images d'accueil */
     .page-accueil .accueil-image-container {
-        flex-direction: column; /* Aligne les images verticalement */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
     }
 
     .page-accueil .accueil-image-container img {
-        width: 80%;  /* Réduit la taille des images */
-        margin-bottom: 20px; /* Ajoute un espacement entre les images */
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    /* Flèche */
+    .arrow-down {
+        font-size: 3rem;
+        margin-top: 20px;
+        animation: bounce 1s infinite;
+    }
+
+    /* Retirer les marges sur les bords de la page */
+    body {
+        padding: 0 10px;  /* Ajoute un padding sur les côtés pour que le contenu ne touche pas les bords */
     }
 }
+
+/* Animation de rebond de la flèche */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Fait "rebondir" la flèche */
+    }
+}
+
