@@ -9,7 +9,7 @@ body {
     padding: 0;
     background-color: #e5fbfd;
     padding-top: 60px;
-    box-sizing: border-box;  /* Permet de mieux gérer les marges et le padding */
+    box-sizing: border-box;
 }
 
 /* Navigation */
@@ -21,7 +21,7 @@ header nav {
     z-index: 1000;
     background-color: #e5fbfd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
+    padding: 1vw 2vw; /* Utilisation de vw pour l'espacement */
 }
 
 header nav ul {
@@ -34,13 +34,13 @@ header nav ul {
 }
 
 header nav ul li {
-    margin: 0 20px;
+    margin: 0 2vw;  /* Utilisation de vw pour espacer les éléments */
 }
 
 header nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 2vw;  /* Taille de police fluide en fonction de la largeur */
 }
 
 header nav ul li a:hover {
@@ -54,7 +54,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 2vw;
     background-color: #e5fbfd;
     color: black;
     max-width: 100%;
@@ -62,7 +62,7 @@ section {
 }
 
 section h1 {
-    font-size: 2rem;
+    font-size: 5vw;  /* Taille du titre proportionnelle à la largeur de l'écran */
     margin: 0;
     z-index: 1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -71,10 +71,10 @@ section h1 {
 /* Texte */
 .texte-gauche, .demande {
     text-align: center;
-    font-size: 1.4rem;  /* Taille du texte réduite pour mobile */
+    font-size: 3vw;  /* Taille du texte réduite en fonction de la largeur */
     line-height: 1.6;
-    margin-top: 20px;
-    padding: 0 10px;
+    margin-top: 2vw;
+    padding: 0 5vw;
     max-width: 100%;
     word-wrap: break-word;
 }
@@ -83,7 +83,7 @@ section h1 {
 #accueil {
     position: relative;
     text-align: center;
-    margin: 20px auto;
+    margin: 2vw auto;
     max-width: 100%;
 }
 
@@ -91,26 +91,26 @@ section h1 {
 #accueil .image-right {
     position: absolute;
     top: 0;
-    width: 100px; /* Réduire la taille des images */
+    width: 10vw; /* Ajustement de la taille des images */
     height: auto;
 }
 
 #accueil .image-left {
-    left: 10px;
+    left: 2vw;
 }
 
 #accueil .image-right {
-    right: 10px;
+    right: 2vw;
 }
 
 #accueil img {
-    width: 100%; /* L'image prend toute la largeur du conteneur */
-    height: auto; /* Assure que l'image conserve ses proportions */
+    width: 100%;
+    height: auto;
 }
 
 /* Partenaires */
 body.page-partenaires section {
-    padding: 20px;
+    padding: 3vw;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -118,91 +118,88 @@ body.page-partenaires section {
 body.page-partenaires .partenaires-container {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Centrer les éléments */
-    gap: 30px;
-    margin-top: 20px;
-    padding: 0 10px;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 3vw;
+    padding: 0 5vw;
 }
 
 body.page-partenaires .partenaire {
     display: flex;
-    flex-direction: column; /* Aligne les images et le texte verticalement */
-    align-items: center; /* Centre le texte et l'image */
+    flex-direction: column;
+    align-items: center;
 }
 
 body.page-partenaires .partenaire img {
-    width: 100px;  /* Ajuste la largeur de l'image des partenaires */
-    margin-bottom: 15px;
+    width: 20vw;  /* Taille des images des partenaires ajustée avec vw */
+    height: auto;
+    margin-bottom: 2vw;
 }
 
 body.page-partenaires .partenaire p {
-    font-size: 1.4rem;  /* Réduit la taille du texte */
+    font-size: 3vw;  /* Taille du texte proportionnelle à l'écran */
     text-align: center;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1vw;
     background-color: #333;
     color: white;
-    margin-top: 40px;
+    margin-top: 5vw;
 }
 
-/* Responsive: Téléphone (max-width: 768px) */
+/* Responsive : Téléphone (max-width: 768px) */
 @media (max-width: 768px) {
 
     /* Navigation */
     header nav ul {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
-        margin: 0;
+        padding: 5vw;
     }
 
     header nav ul li {
-        margin: 10px 0;
+        margin: 2vw 0;
     }
 
     header nav ul li a {
-        font-size: 1.2rem;
+        font-size: 4vw; /* Taille du texte augmentée en fonction de l'écran */
     }
 
     /* Section avec image et texte centré */
     section {
-        height: auto;
-        padding: 20px;
+        padding: 5vw;
     }
 
     section h1 {
-        font-size: 2rem;
-        margin: 0;
+        font-size: 7vw;  /* Titre proportionnel à la largeur de l'écran */
     }
 
     .texte-gauche, .demande {
-        font-size: 1.4rem;
-        margin-top: 20px;
+        font-size: 4vw; /* Texte proportionnel */
+        margin-top: 3vw;
         line-height: 1.4;
         text-align: center;
-        padding: 0 20px;
+        padding: 0 7vw;
     }
 
     /* Texte des pages */
     #accueil h1, .texte-gauche, .demande {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 
     /* Images */
     #accueil img {
-        width: 100%;
-        max-width: 100%;  /* L'image ne dépasse pas la largeur de l'écran */
+        width: 90%; /* Image réduite proportionnellement */
+        max-width: 100%;
     }
 
     /* Images des partenaires */
     body.page-partenaires .partenaire img {
-        width: 80%;  /* Réduit la taille des images des partenaires */
-        max-width: 150px;
+        width: 30vw;  /* Ajuste la taille des images des partenaires */
     }
 
     /* Conteneur des images d'accueil */
@@ -210,25 +207,25 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 15px;
+        gap: 5vw;
     }
 
     .page-accueil .accueil-image-container img {
         width: 90%;
-        max-width: 300px;
+        max-width: 80vw;  /* Limite la taille des images */
         height: auto;
     }
 
     /* Flèche */
     .arrow-down {
-        font-size: 3rem;
-        margin-top: 20px;
+        font-size: 8vw;  /* Taille de la flèche proportionnelle */
+        margin-top: 5vw;
         animation: bounce 1s infinite;
     }
 
     /* Retirer les marges sur les bords de la page */
     body {
-        padding: 0 10px;  /* Ajoute un padding sur les côtés pour que le contenu ne touche pas les bords */
+        padding: 0 5vw;
     }
 }
 
@@ -238,7 +235,7 @@ footer {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(10px); /* Fait "rebondir" la flèche */
+        transform: translateY(10px);
     }
 }
 
