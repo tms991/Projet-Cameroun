@@ -1,138 +1,152 @@
 /* Fond du site */
 html {
-    height: 100%;
+    height: 100%; /* Assure que le conteneur principal couvre toute la hauteur */
 }
 
 body {
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #e5fbfd;
-    padding-top: 60px;
+    min-height: 100%; /* Permet de s'étendre si le contenu dépasse la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espacements par défaut */
+    background-color: #e5fbfd; /* Couleur de fond pour tout le site */
+    padding-top: 60px; /* Espace pour que le contenu ne soit pas caché sous la navigation */
 }
 
 /* Navigation */
 header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: auto;
-    z-index: 1000;
-    background-color: #e5fbfd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
+    position: fixed;  /* Fixe la navigation en haut */
+    top: 0;  /* Positionne la navigation en haut de la fenêtre */
+    left: 0;  /* Positionne la navigation à droite de la page */
+    width: auto;  /* Laisse la largeur s'ajuster automatiquement */
+    z-index: 1000;  /* Met la navigation au-dessus des autres éléments */
+    background-color: #e5fbfd;  /* Fond de la navigation pour qu'elle soit visible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Ombre sous la barre de navigation */
+    padding: 10px 20px;  /* Espacement autour des éléments de la navigation */
 }
 
+/* Styles pour les éléments de la navigation */
 header nav ul {
     display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
     list-style: none;
-    justify-content: flex-end;
+    justify-content: flex-end;  /* Aligne les éléments de la navigation à droite */
 }
 
 header nav ul li {
-    margin: 0 20px;
+    margin: 0 20px;  /* Espacement entre les éléments de la navigation */
 }
 
 header nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
+    color: black;  /* Couleur des liens */
+    text-decoration: none;  /* Pas de soulignement par défaut */
+    font-size: 1.2rem;  /* Taille du texte */
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline;  /* Sous-ligne le lien au survol */
 }
 
+/* Pour ajouter un espacement au contenu sous la barre de navigation */
 body {
-    padding-top: 60px;
+    padding-top: 60px; /* Espace pour que le contenu ne soit pas caché sous la navigation */
 }
 
 /* Section avec image de fond et titre centré */
 section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    background-color: #e5fbfd;
-    color: black;
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    text-align: center; /* Centre le texte dans la section */
+    
+    background-color: #e5fbfd; /* Couleur de fond uniforme */
+    color: black; /* Texte en noir */
 }
 
+/* Centrer uniquement le titre h1 */
 section h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* Ajuste la taille du texte */
     margin: 0;
-    z-index: 1;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Assure que le texte s'affiche au-dessus de l'image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Améliore la lisibilité du texte */
 }
 
+/* texte de acceuil.html */
 .texte-gauche {
-    text-align: center;
-    margin-top: 45px;
-    font-size: 1.6rem;
-    line-height: 1.6;
+    text-align: center; /* Aligne le texte au centre */
+    margin-top: 45px; /* Espace entre le titre et le texte */
+    font-size: 1.6rem; /* Ajuste la taille du texte */
+    line-height: 1.6; /* Améliore la lisibilité */
 }
 
+/* texte de contact.html */
 .demande {
-    text-align: left;
-    margin-top: 45px;
-    margin-left: 0;
-    font-size: 1.6rem;
-    line-height: 1.6;
+    text-align: left; /* Aligne le texte à gauche */
+    margin-top: 45px; /* Espace entre le titre et le texte */
+    margin-left: 0; /* Assure que le texte commence à gauche */
+    font-size: 1.6rem; /* Ajuste la taille du texte */
+    line-height: 1.6; /* Améliore la lisibilité */
 }
 
+/* Titre de la page accueil */
 #accueil h1 {
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 20px; /* Ajuste l'espace entre le titre et l'image */
+    text-align: center; /* Optionnel, pour centrer le titre */
 }
 
+/* Image principale */
 #accueil img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
+    display: block; /* Centrer l'image horizontalement */
+    margin: 0 auto; /* Centrer l'image */
+    margin-top: 20px; /* Espace au-dessus de l'image */
 }
 
+/* Conteneur pour le titre avec images de chaque côté */
+/* Conteneur pour le titre avec images de chaque côté */
 #accueil {
-    position: relative;
-    text-align: center;
+    position: relative; /* Permet de positionner les images relatives au conteneur */
+    text-align: center; /* Centre le titre */
     margin: 20px 0;
 }
 
+/* Images à gauche et à droite du titre (positionnées en haut à droite de la page) */
 #accueil .image-left,
 #accueil .image-right {
     position: absolute;
-    top: 0;
-    width: 150px;
-    height: auto;
+    top: 0; /* Aligne les images tout en haut de la page */
+    width: 150px; /* Largeur des images */
+    height: auto; /* Conserve les proportions */
 }
 
 #accueil .image-left {
-    right: 10px;
+    right: 10px; /* Place l'image à gauche de l'autre image, tout en haut */
 }
 
 #accueil .image-right {
-    right: 550px;
+    right: 550px; /* Place l'image à droite */
 }
 
+
+/* Texte sous le titre */
 #accueil .texte-sous-titre {
-    margin-top: 20px;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    max-width: 1100px;
-    text-align: center;
+    margin-top: 20px; /* Espace entre l'image principale et le texte */
+    font-size: 1.6rem; /* Taille du texte */
+    line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité */
+    max-width: 1100px; /* Limite la largeur du texte */
+    text-align: center; /* Centre le texte horizontalement */
 }
 
+/* Styles spécifiques à la page partenaires */
 body.page-partenaires section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centre le contenu verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+    text-align: center; /* Aligne le texte au centre */
     padding: 40px;
-    background-color: #e5fbfd;
+    background-color: #e5fbfd; /* Uniformise la couleur de fond */
     color: black;
 }
 
@@ -143,66 +157,74 @@ body.page-partenaires section h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Conteneur pour les partenaires */
 body.page-partenaires .partenaires-container {
     display: flex;
-    flex-direction: column;
-    gap: 45px;
-    align-items: flex-start;
-    margin-top: 20px;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    gap: 45px; /* Espacement entre chaque partenaire */
+    align-items: flex-start; /* Aligne les éléments à gauche du conteneur */
+    margin-top: 20px; /* Ajoute un espacement au-dessus */
 }
 
+/* Chaque partenaire (image + texte) */
 body.page-partenaires .partenaire {
     display: flex;
-    align-items: center;
+    align-items: center; /* Aligne les images et le texte verticalement */
 }
 
+/* Style des images */
 body.page-partenaires .partenaire img {
-    width: 160px;
-    height: auto;
-    margin-right: 30px;
+    width: 160px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Conserve les proportions de l'image */
+    margin-right: 30px; /* Espace entre l'image et le texte */
 }
 
+/* Texte à droite de chaque image */
 body.page-partenaires .partenaire p {
-    margin: 0;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    margin: 0; /* Supprime les marges par défaut */
+    font-size: 1.6rem; /* Ajustez la taille du texte selon vos préférences */
+    line-height: 1.5; /* Améliore la lisibilité */
 }
 
+/* Flèche pointant vers le bas */
 .arrow-down {
-    font-size: 5rem;
-    text-align: center;
-    margin-top: 20px;
-    color: black;
-    cursor: pointer;
-    animation: bounce 1s infinite;
+    font-size: 5rem; /* Taille de la flèche */
+    text-align: center; /* Centrer horizontalement */
+    margin-top: 20px; /* Espace entre l'image et la flèche */
+    color: black; /* Couleur de la flèche */
+    cursor: pointer; /* Curseur en forme de main pour indiquer que c'est cliquable */
+    animation: bounce 1s infinite; /* Animation de rebond */
 }
 
+/* Animation de rebond de la flèche */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(10px);
+        transform: translateY(10px); /* Fait "rebondir" la flèche */
     }
 }
 
+/* Images alignées horizontalement pour la page d'accueil */
 .page-accueil .accueil-image-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 20px; /* Espace entre les images */
+    margin-bottom: 20px; /* Espace sous le groupe d'images */
 }
 
 .page-accueil .accueil-image-container img {
-    width: 30%;
-    max-width: 500px;
-    height: 250px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Les images occupent 30% de la largeur du conteneur parent */
+    max-width: 500px; /* Largeur maximale */
+    height: 250px; /* Conserve les proportions des images */
+    border-radius: 5px; /* Ajoute un léger arrondi aux coins */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
 }
 
+/* Blocs répétitifs */
 .page-accueil .bloc-repe {
-    margin-top: 80px;
+    margin-top: 80px; /* Espace entre les blocs */
     text-align: center;
 }
 
@@ -216,9 +238,10 @@ body.page-partenaires .partenaire p {
     font-size: 1.6rem;
     line-height: 1.6;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centrer le paragraphe */
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
@@ -229,105 +252,85 @@ footer {
 
 /* Responsive: Téléphone (max-width: 768px) */
 @media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
+    /* Désactivation du zoom */
+    html {
+        touch-action: manipulation;
+        overscroll-behavior: none;
     }
-    
+
+    /* Rubriques */
+    header nav ul {
+        flex-direction: column; /* Empile les rubriques verticalement */
+        align-items: flex-start; /* Aligne les rubriques à gauche */
+        padding-left: 10px; /* Légère marge pour aérer */
+        margin-top: 10px; /* Espace supplémentaire en haut */
+    }
+
     header nav ul li {
-        margin: 10px 0;
+        margin: 5px 0; /* Réduit l'espace entre les rubriques */
     }
 
     header nav ul li a {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Réduit la taille des rubriques */
+        text-align: left; /* Aligne le texte des rubriques à gauche */
     }
 
+    /* Section avec image et texte */
     section {
-        height: auto;
-        padding: 20px;
+        padding: 10px; /* Réduit le padding pour les petits écrans */
+        text-align: left; /* Aligne tout le contenu à gauche */
     }
 
     section h1 {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Ajuste la taille du titre */
     }
 
+    /* Texte général */
     .texte-gauche,
     .demande {
-        font-size: 1.4rem;
-        margin-top: 20px;
-        line-height: 1.4;
+        font-size: 1.2rem; /* Réduit la taille du texte */
+        line-height: 1.3; /* Réduit l'espacement des lignes */
     }
 
+    /* Image principale */
     #accueil img {
-        width: 100%;
-        height: auto;
+        max-width: 100%; /* Empêche l'image de déborder */
+        height: auto; /* Conserve les proportions */
     }
 
-    .partenaires-container {
-        padding: 20px;
+    /* Contenu scollable à droite */
+    body {
+        overflow-x: hidden; /* Empêche tout débordement horizontal */
     }
 
-    .partenaire {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .partenaire img {
-        width: 100px;
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-
-    .partenaire p {
-        font-size: 1.4rem;
-    }
-
+    /* Images dans .page-accueil */
     .page-accueil .accueil-image-container {
-        flex-direction: column;
+        flex-direction: column; /* Aligne les images verticalement */
+        align-items: center; /* Centre les images */
     }
 
     .page-accueil .accueil-image-container img {
-        width: 80%;
-        margin-bottom: 20px;
+        width: 90%; /* Réduit la taille des images */
+        margin-bottom: 15px; /* Espacement entre les images */
+    }
+
+    /* Partenaires */
+    .partenaires-container {
+        padding: 15px; /* Adapte l'espacement sur les petits écrans */
+    }
+
+    .partenaire {
+        flex-direction: column; /* Aligne les partenaires verticalement */
+        text-align: center; /* Centre les contenus */
+    }
+
+    .partenaire img {
+        width: 80px; /* Taille réduite des images partenaires */
+        margin-bottom: 10px; /* Espace entre l'image et le texte */
+    }
+
+    .partenaire p {
+        font-size: 1.2rem; /* Texte légèrement réduit */
     }
 }
 
-/* Correctif pour "Présentation du projet" */
-@media (max-width: 768px) {
-    .presentation-projet {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .presentation-projet img {
-        width: 80%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .presentation-projet .texte {
-        text-align: center;
-        font-size: 1.4rem;
-        line-height: 1.5;
-    }
-
-    section {
-        min-height: auto;
-        padding: 20px 10px;
-    }
-
-    header nav {
-        height: auto;
-    }
-
-    header nav ul li {
-        font-size: 1rem;
-        margin: 5px 0;
-    }
-
-    header nav ul li a {
-        font-size: 1rem;
-    }
-}
