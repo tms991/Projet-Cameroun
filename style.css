@@ -248,97 +248,104 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 40px;
-}
+/* Responsive: Téléphone (max-width: 768px) */
 @media (max-width: 768px) {
+
     /* Navigation */
     header nav ul {
-        flex-direction: column; /* Empile les rubriques verticalement */
-        align-items: flex-start; /* Aligne les rubriques à gauche */
-        padding: 10px 15px; /* Espace autour des rubriques */
-        margin: 0; /* Supprime tout écart inutile */
+        flex-direction: column;  /* Affiche les éléments en colonne */
+        align-items: center;    /* Centre les éléments horizontalement */
     }
-
+    
     header nav ul li {
-        margin: 5px 0; /* Espacement vertical entre rubriques */
+        margin: 10px 0;         /* Ajoute un espacement vertical entre les liens */
     }
 
     header nav ul li a {
-        font-size: 1rem; /* Réduit légèrement la taille des liens */
-        text-align: left; /* Aligne le texte à gauche */
+        font-size: 1rem;        /* Taille réduite pour les petits écrans */
     }
 
-    /* Corps de la page */
-    body {
-        overflow-x: hidden; /* Empêche les débordements horizontaux */
-        margin: 0; /* Supprime les marges inutiles */
-        padding: 0; /* Supprime les paddings par défaut */
-    }
-
-    /* Sections */
+    /* Section générale */
     section {
-        padding: 15px; /* Réduit le padding global */
-        text-align: left; /* Aligne tout le contenu à gauche */
+        height: auto;           /* Laisse la hauteur s'adapter au contenu */
+        padding: 20px;          /* Ajoute un espace autour pour l'aération */
     }
 
     section h1 {
-        font-size: 2rem; /* Taille réduite pour les petits écrans */
-        margin: 10px 0; /* Espacement ajusté autour du titre */
+        font-size: 2rem;        /* Taille du titre ajustée pour petits écrans */
     }
 
-    /* Texte */
+    /* Texte générique */
     .texte-gauche,
     .demande {
-        font-size: 1.2rem; /* Réduit légèrement la taille */
-        line-height: 1.4; /* Réduit l'espacement des lignes */
-        margin: 10px 0; /* Ajoute un espace vertical */
+        font-size: 1.4rem;      /* Taille de texte réduite pour meilleure lisibilité */
+        margin-top: 20px;
+        line-height: 1.4;       /* Espacement des lignes adapté */
     }
 
-    /* Images */
-    img {
-        max-width: 100%; /* Images toujours contenues dans l'écran */
-        height: auto; /* Respecte les proportions */
-        display: block; /* Corrige les marges accidentelles */
-        margin: 0 auto; /* Centre les images */
-    }
-
-    /* Contenu principal */
-    #accueil {
-        margin: 0 auto; /* Centrage */
-        padding: 15px; /* Évite les débordements */
-    }
-
+    /* Accueil */
     #accueil img {
-        width: 100%; /* Images adaptées à l'écran */
-        margin-top: 15px; /* Espacement sous le titre */
+        width: 100%;            /* Image prend toute la largeur disponible */
+        height: auto;           /* Conserve les proportions */
+    }
+
+    #accueil .texte-sous-titre {
+        font-size: 1.4rem;      /* Ajuste la taille du texte */
     }
 
     /* Partenaires */
     .partenaires-container {
-        padding: 10px; /* Adapte l'espacement pour téléphone */
-        text-align: center; /* Centre les partenaires */
+        padding: 20px;
     }
 
     .partenaire {
-        flex-direction: column; /* Aligne les partenaires verticalement */
-        margin-bottom: 20px; /* Espace entre les partenaires */
+        flex-direction: column; /* Aligne verticalement les images et les textes */
+        text-align: center;
     }
 
     .partenaire img {
-        width: 80%; /* Images des partenaires ajustées */
-        margin-bottom: 10px; /* Espace entre image et texte */
+        width: 100px;           /* Taille réduite pour les images partenaires */
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 
     .partenaire p {
-        font-size: 1.2rem; /* Texte des partenaires légèrement réduit */
-        margin: 0 auto; /* Centre le texte */
+        font-size: 1.4rem;      /* Texte ajusté */
     }
 
-    /* Footer */
-    footer {
-        font-size: 1rem; /* Texte du footer réduit */
-        padding: 10px 0; /* Réduction du padding */
+    /* Images de l'accueil */
+    .page-accueil .accueil-image-container {
+        flex-direction: column; /* Images empilées verticalement */
+    }
+
+    .page-accueil .accueil-image-container img {
+        width: 80%;             /* Images réduites */
+        margin-bottom: 20px;
+    }
+
+    /* Présentation du projet */
+    .page-presentation .presentation-container {
+        display: flex;
+        flex-direction: column; /* Colonne verticale sur mobile */
+        align-items: flex-start; /* Aligne le texte en haut à gauche */
+        gap: 15px;              /* Espacement entre les éléments */
+        margin: 0 15px;         /* Marges horizontales réduites */
+    }
+
+    .page-presentation .presentation-container img {
+        width: 100%;            /* Images prennent toute la largeur */
+        height: auto;           /* Conserve les proportions */
+        margin-bottom: 15px;    /* Espacement sous l'image */
+    }
+
+    .page-presentation .presentation-container p {
+        font-size: 1.4rem;      /* Texte adapté pour les petits écrans */
+        line-height: 1.6;       /* Espacement des lignes pour lisibilité */
+    }
+
+    .page-presentation h1 {
+        font-size: 2rem;        /* Titre ajusté */
+        margin-bottom: 15px;    /* Espacement sous le titre */
+        text-align: center;     /* Centre le titre */
     }
 }
-
-}
-
