@@ -249,88 +249,96 @@ footer {
     color: white;
     margin-top: 40px;
 }
-
-/* Responsive: Téléphone (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Désactivation du zoom */
-    html {
-        touch-action: manipulation;
-        overscroll-behavior: none;
-    }
-
-    /* Rubriques */
+    /* Navigation */
     header nav ul {
         flex-direction: column; /* Empile les rubriques verticalement */
         align-items: flex-start; /* Aligne les rubriques à gauche */
-        padding-left: 10px; /* Légère marge pour aérer */
-        margin-top: 10px; /* Espace supplémentaire en haut */
+        padding: 10px 15px; /* Espace autour des rubriques */
+        margin: 0; /* Supprime tout écart inutile */
     }
 
     header nav ul li {
-        margin: 5px 0; /* Réduit l'espace entre les rubriques */
+        margin: 5px 0; /* Espacement vertical entre rubriques */
     }
 
     header nav ul li a {
-        font-size: 0.9rem; /* Réduit la taille des rubriques */
-        text-align: left; /* Aligne le texte des rubriques à gauche */
+        font-size: 1rem; /* Réduit légèrement la taille des liens */
+        text-align: left; /* Aligne le texte à gauche */
     }
 
-    /* Section avec image et texte */
+    /* Corps de la page */
+    body {
+        overflow-x: hidden; /* Empêche les débordements horizontaux */
+        margin: 0; /* Supprime les marges inutiles */
+        padding: 0; /* Supprime les paddings par défaut */
+    }
+
+    /* Sections */
     section {
-        padding: 10px; /* Réduit le padding pour les petits écrans */
+        padding: 15px; /* Réduit le padding global */
         text-align: left; /* Aligne tout le contenu à gauche */
     }
 
     section h1 {
-        font-size: 1.8rem; /* Ajuste la taille du titre */
+        font-size: 2rem; /* Taille réduite pour les petits écrans */
+        margin: 10px 0; /* Espacement ajusté autour du titre */
     }
 
-    /* Texte général */
+    /* Texte */
     .texte-gauche,
     .demande {
-        font-size: 1.2rem; /* Réduit la taille du texte */
-        line-height: 1.3; /* Réduit l'espacement des lignes */
+        font-size: 1.2rem; /* Réduit légèrement la taille */
+        line-height: 1.4; /* Réduit l'espacement des lignes */
+        margin: 10px 0; /* Ajoute un espace vertical */
     }
 
-    /* Image principale */
+    /* Images */
+    img {
+        max-width: 100%; /* Images toujours contenues dans l'écran */
+        height: auto; /* Respecte les proportions */
+        display: block; /* Corrige les marges accidentelles */
+        margin: 0 auto; /* Centre les images */
+    }
+
+    /* Contenu principal */
+    #accueil {
+        margin: 0 auto; /* Centrage */
+        padding: 15px; /* Évite les débordements */
+    }
+
     #accueil img {
-        max-width: 100%; /* Empêche l'image de déborder */
-        height: auto; /* Conserve les proportions */
-    }
-
-    /* Contenu scollable à droite */
-    body {
-        overflow-x: hidden; /* Empêche tout débordement horizontal */
-    }
-
-    /* Images dans .page-accueil */
-    .page-accueil .accueil-image-container {
-        flex-direction: column; /* Aligne les images verticalement */
-        align-items: center; /* Centre les images */
-    }
-
-    .page-accueil .accueil-image-container img {
-        width: 90%; /* Réduit la taille des images */
-        margin-bottom: 15px; /* Espacement entre les images */
+        width: 100%; /* Images adaptées à l'écran */
+        margin-top: 15px; /* Espacement sous le titre */
     }
 
     /* Partenaires */
     .partenaires-container {
-        padding: 15px; /* Adapte l'espacement sur les petits écrans */
+        padding: 10px; /* Adapte l'espacement pour téléphone */
+        text-align: center; /* Centre les partenaires */
     }
 
     .partenaire {
         flex-direction: column; /* Aligne les partenaires verticalement */
-        text-align: center; /* Centre les contenus */
+        margin-bottom: 20px; /* Espace entre les partenaires */
     }
 
     .partenaire img {
-        width: 80px; /* Taille réduite des images partenaires */
-        margin-bottom: 10px; /* Espace entre l'image et le texte */
+        width: 80%; /* Images des partenaires ajustées */
+        margin-bottom: 10px; /* Espace entre image et texte */
     }
 
     .partenaire p {
-        font-size: 1.2rem; /* Texte légèrement réduit */
+        font-size: 1.2rem; /* Texte des partenaires légèrement réduit */
+        margin: 0 auto; /* Centre le texte */
     }
+
+    /* Footer */
+    footer {
+        font-size: 1rem; /* Texte du footer réduit */
+        padding: 10px 0; /* Réduction du padding */
+    }
+}
+
 }
 
