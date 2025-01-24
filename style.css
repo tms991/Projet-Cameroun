@@ -248,3 +248,16 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 40px;
+    
+#accueil h1, #accueil p, #accueil img {
+    opacity: 0; 
+    transform: translatex(-160px); 
+    transition: all 3s ease-in-out; 
+}
+
+
+#accueil h1.show, #accueil p.show, #accueil img.show {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
